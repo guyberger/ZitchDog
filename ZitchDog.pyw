@@ -6,15 +6,6 @@ import logging
 import tkinter as tk
 from tkinter import ttk
 from tkinter.messagebox import showinfo
-
-def center(win):
-    win.update_idletasks()
-    width = win.winfo_width()
-    height = win.winfo_height()
-    x = (win.winfo_screenwidth() // 2) - (width // 2)
-    y = (win.winfo_screenheight() // 2) - (height // 2)
-    win.geometry('{}x{}+{}+{}'.format(width, height, x, y))
-
 class SampleApp(tk.Tk):
     def __init__(self, *args, **kwargs):
         tk.Tk.__init__(self, *args, **kwargs)
@@ -23,6 +14,7 @@ class SampleApp(tk.Tk):
         self.myLabel = tk.Label(None, text = "Marshall says: Zitchdog!")
         self.myLabel.pack()
 
+        self.attributes("-topmost", True)
         self.update_idletasks()
         width = self.winfo_width()
         height = self.winfo_height()
