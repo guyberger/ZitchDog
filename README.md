@@ -1,6 +1,6 @@
 # ZitchDog
 Dogs come in all shapes and sizes.
-Dogs are man's best friend.
+Dogs are man's best friends.
 Once a dog is referenced, it should be acknowledged.
 This key logger will find any typing of "dog" (case-insensitive) and alert you about it. 1:0.
 Inspired by How I Met Your Mother.
